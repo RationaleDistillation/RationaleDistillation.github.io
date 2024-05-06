@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Efficient End-to-End Visual Document Understanding with Rationale Distillation">
+  <meta name="keywords" content="Multimodality and Language Grounding to Vision, Robotics and Beyond">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Efficient End-to-End Visual Document Understanding with Rationale Distillation</title>
+
+<!-- Google Tag Manager -->
+<!-- <script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-MFCT45H');</script> -->
+<!-- End Google Tag Manager -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/tifa.png"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MFCT45H" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript> -->
+  <!-- End Google Tag Manager (noscript) -->
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Efficient End-to-End Visual Document Understanding with Rationale Distillation</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://billzhu.me">Wang (Bill) Zhu</a><sup>&#9824;&#9825;*</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://alekhagarwal.net">Alekh Agarwal</a><sup>&#9827;</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://mandarjoshi90.github.io">Mandar Joshi</a><sup>&#9824;</sup>,
+            </span>
+            <br>
+            <span class="author-block">
+              <a href="https://robinjia.github.io">Robin Jia</a><sup>&#9825;</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://jessethomason.com">Jesse Thomason</a><sup>&#9825;</sup>,
+            </span>
+            <span class="author-block">
+              <a href="http://kristinatoutanova.com">Kristina Toutanova</a><sup>&#9824;</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>&#9824; </sup>Google DeepMind</span>&nbsp;&nbsp;
+            <span class="author-block"><sup>&#9827; </sup>Google Research</span>&nbsp;&nbsp;
+            <span class="author-block"><sup>&#9825; </sup>University of Southern California</span>
+            <br>
+            <span style="font-size:small"><sup>* </sup><i>Work done during internship at Google DeepMind</i></span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2311.09612"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+        		
+              <!-- Slides Link. -->
+              <span class="link-block">
+                <span class="button-wrapper">
+                  <a href="https://docs.google.com/presentation/d/1EHVq8OaQiZUNEGdHQrV-PVAheys89C2U/edit?usp=sharing&ouid=102443102243134590278&rtpof=true&sd=true" 
+                     class="external-link button is-normal is-rounded is-dark">
+                    <i style="font-size: small" class="fa fa-database"></i> 
+                    <span>&nbsp;Slides</span>
+                  </a>
+                </span>
+              </span>
+
+              <!-- Video Link. -->
+              <span class="link-block">
+                <span class="button-wrapper">
+                  <a class="external-link button is-normal is-rounded is-dark">
+                    <i style="font-size: small" class="fa fa-database"></i> 
+                    <span>&nbsp;Video (Coming Soon)</span>
+                  </a>
+                </span>
+              </span>
+              
+              <!-- Code Link. -->
+              <span class="link-block">
+                <span class="button-wrapper">
+                  <a class="external-link button is-normal is-rounded is-dark">
+                    <i style="font-size: small" class="fa fa-database"></i> 
+                    <span>&nbsp;Code (Coming Soon)</span>
+                  </a>
+                </span>
+              </span>
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div style="text-align: center;"><br/>
+        <img src="teaser_small_model_vdu.jpg" alt="rd_teaser"
+        width="device-width" class="center">
+      </div>
+      <h2 class="subtitle has-text-centered" style="max-width:870px;">
+        Can we achieve high accuracy and efficiency by teaching a smaller model to learn from short rationales generated by external tools and expensive LLMs?
+        <br>
+        Introducing <span style="color: rgb(153, 27, 30);"><b>Rationale Distillation</b></span> 
+        <br>
+      </h2>
+    </div>
+  </div>
+
+
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="column content has-text-justified">
+          <p>
+            Understanding visually situated language requires interpreting complex layouts of textual and visual elements. Pre-processing tools, such as optical character recognition (OCR), can map document image inputs to textual tokens, then large language models (LLMs) can reason over text. However, such methods have high computational and engineering complexity. Can small pretrained image-to-text models accurately understand visual documents through similar recognition and reasoning steps instead? We propose Rationale Distillation (RD), which incorporates the outputs of OCR tools, LLMs, and larger multimodal models as intermediate "rationales", and trains a small student model to predict both rationales and answers. On three visual document understanding benchmarks representing infographics, scanned documents, and figures, our Pix2Struct (282M parameters) student model finetuned with RD outperforms the base model by 4-5% absolute accuracy with only 1% higher computational cost. 
+          </p>
+          
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+
+      <div class="column is-four-fifths">
+
+          <h3 class="title is-3 has-text-centered">Rational Distillation</h3>
+
+          <!-- img src="" width="device-width" -->
+
+          <p>
+            We propose Rationale Distillation (RD), which dis-tills rationales from a predefined set of tools, and trains a student model to predict the relevant rationales before predicting the answer.
+          </p>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+
+      <div class="column is-four-fifths">
+
+
+          <h3 class="title is-3 has-text-centered">Results</h3>
+
+
+          <!-- img src="" alt="" width="device-width" -->
+
+          <p>
+            Placeholder
+          </p>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{zhu2024efficient,
+      title={Efficient End-to-End Visual Document Understanding with Rationale Distillation}, 
+      author={Wang Zhu and Alekh Agarwal and Mandar Joshi and Robin Jia and Jesse Thomason and Kristina Toutanova},
+      booktitle = {North American Chapter of the Association for Computational Linguistics},
+      year={2024},
+}</code></pre>
+  </div>
+</section>
+
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
