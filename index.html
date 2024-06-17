@@ -253,34 +253,34 @@
         <div class="column content has-text-justified">
           <p>
             RD shows consistent improvements on InfoVQA (+4.0), DocVQA (+4.6) and ChartQA-human (+7.7) test sets, for the base Pix2Struct models. Similar improvements hold also on large Pix2Struct models.
-          </p><br>
+          </p>
         </div>
-        <img src="./static/images/main_results.jpg" alt="main_results" width="80%" class="center">
+        <img src="./static/images/main_results.jpg" alt="main_results" width="100%" class="center">
         <div class="column content has-text-justified">
           <p>
             We conduct ablation study of different student training task combinations on the InfoVQA dev set:
             Question, Rationale and Answer (QRA), Answer with Student Rationale (ASR) and analogous tasks on Cropped Images (CI).
             We show the importance of both training to predict the gold rationales and training to predict the answer based on the noisy rationales (row #3),
             as well as the usefulness of image cropping augmentation (row #6).
-          </p><br>
+          </p>
         </div>
-        <img src="./static/images/ablation.jpg" alt="ablation" width="80%" class="center">
+        <img src="./static/images/ablation.jpg" alt="ablation" width="60%" class="center">
         <div class="column content has-text-justified">
           <p>
             We analyze the usefulness of the student-generated rationale in comparison to evidence from the OCR tool and several ways to sub-select fragments of similar length from it including LLM-Summarizer without access to gold answer (based on PaLM 2-L)
             We see that an external OCR tool would still provide benefits at the cost of added computation by the OCR system.
             Besides, the analysis indicates a significant room for improvement in rationale prediction for student models.
-          </p><br>
+          </p>
         </div>
-        <img src="./static/images/source_of_evidence.jpg" alt="soe" width="80%" class="center">
+        <img src="./static/images/source_of_evidence.jpg" alt="soe" width="60%" class="center">
         <div class="column content has-text-justified">
           <p>
             We observe large improvements when answers are text spans in the image or in the question.
             The former type indicates the helpfulness of the intermediate rationales;
             the latter suggests the helpfulness of decoding the question before answering.
-          </p><br>
+          </p>
         </div>
-        <img src="./static/images/breakdown.jpg" alt="breakdown" width="80%" class="center">
+        <img src="./static/images/breakdown.jpg" alt="breakdown" width="100%" class="center">
       </div>
     </div>
   </div>
