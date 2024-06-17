@@ -212,7 +212,7 @@
           <h3 class="title is-3 has-text-centered">Rational Distillation</h3>
           <div class="column content has-text-justified">
             <p>
-              We first describe the process of <b>generating the two types of rationales from tools</b>, and <b>a data augmentation scheme</b> for increasing the number of examples with rationales.
+              We first describe the process of <span style="color: rgb(153, 27, 30);"><b>generating the two types of rationales from tools</b></span>, and <span style="color: rgb(153, 27, 30);"><b>a data augmentation scheme</b></span> for increasing the number of examples with rationales.
             </p>
           </div>
       </div>
@@ -235,7 +235,7 @@
       <div class="column is-four-fifths">
         <div class="column content has-text-justified">
           <p>
-            Then, we discuss training and inference for student models to <b>predict the rationale and the answer</b>.<br>
+            Then, we discuss training and inference for student models to <span style="color: rgb(153, 27, 30);"><b>predict the rationale and the answer</b></span>.<br>
           </p><br>
         </div>
         <img src="./static/images/student_training.jpg" alt="st_training" width="80%" class="center">
@@ -252,7 +252,7 @@
         <h3 class="title is-3 has-text-centered">Results</h3>
         <div class="column content has-text-justified">
           <p>
-            RD shows consistent improvements on InfoVQA <b>(+4.0)</b>, DocVQA <b>(+4.6)</b> and ChartQA-human <b>(+7.7)</b> test sets, for the base Pix2Struct models. <b>Similar improvements hold also on large Pix2Struct models</b>.
+            RD shows consistent improvements on InfoVQA <span style="color: rgb(153, 27, 30);"><b>(+4.0)</b></span>, DocVQA <span style="color: rgb(153, 27, 30);"><b>(+4.6)</b></span> and ChartQA-human <span style="color: rgb(153, 27, 30);"><b>(+7.7)</b></span> test sets, for the base Pix2Struct models. <span style="color: rgb(153, 27, 30);"><b>Similar improvements hold also on large Pix2Struct models</b></span>.
           </p>
         </div>
         <img src="./static/images/main_results.jpg" alt="main_results" width="100%" class="center">
@@ -260,24 +260,24 @@
           <p>
             We conduct ablation study of different student training task combinations on the InfoVQA dev set:
             Question, Rationale and Answer (QRA), Answer with Student Rationale (ASR) and analogous tasks on Cropped Images (CI).
-            We show the importance of both <b>training to predict the gold rationales</b> and <b>training to predict the answer based on the noisy rationales</b> (row #3),
+            We show the importance of both <span style="color: rgb(153, 27, 30);"><b>training to predict the gold rationales</b></span> and <span style="color: rgb(153, 27, 30);"><b>training to predict the answer based on the noisy rationales</b></span> (row #3),
             as well as the usefulness of image cropping augmentation (row #6).
           </p>
         </div>
         <img src="./static/images/ablation.jpg" alt="ablation" width="60%" class="center">
         <div class="column content has-text-justified">
           <p>
-            We analyze <b>the usefulness of the student-generated rationale</b> in comparison to evidence from the OCR tool and several ways to sub-select fragments of similar length from it including LLM-Summarizer without access to gold answer (based on PaLM 2-L)
-            We see that <b>an external OCR tool would still provide benefits</b> at the cost of added computation by the OCR system.
-            Besides, the analysis indicates <b>a large room for improvement in rationale prediction</b> for student models.
+            We analyze <span style="color: rgb(153, 27, 30);"><b>the usefulness of the student-generated rationale</b></span> in comparison to evidence from the OCR tool and several ways to sub-select fragments of similar length from it including LLM-Summarizer without access to gold answer (based on PaLM 2-L)
+            We see that <span style="color: rgb(153, 27, 30);"><b>an external OCR tool would still provide benefits</b></span> at the cost of added computation by the OCR system.
+            Besides, the analysis indicates <span style="color: rgb(153, 27, 30);"><b>a large room for improvement in rationale prediction</b></span> for student models.
           </p>
         </div>
         <img src="./static/images/source_of_evidence.jpg" alt="soe" width="50%" class="center">
         <div class="column content has-text-justified">
           <p>
             We observe large improvements when answers are text spans in the image or in the question.
-            The former type indicates <b>the helpfulness of the intermediate rationales</b>;
-            the latter suggests <b>the helpfulness of decoding the question before answering</b>.
+            The former type indicates <span style="color: rgb(153, 27, 30);"><b>the helpfulness of the intermediate rationales</b></span>;
+            the latter suggests <span style="color: rgb(153, 27, 30);"><b>the helpfulness of decoding the question before answering</b></span>.
           </p>
         </div>
         <img src="./static/images/breakdown.jpg" alt="breakdown" width="100%" class="center">
