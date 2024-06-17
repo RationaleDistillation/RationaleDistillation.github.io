@@ -8,16 +8,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Efficient End-to-End Visual Document Understanding with Rationale Distillation</title>
 
-<!-- Google Tag Manager -->
-<!-- <script>(function (w, d, s, l, i) {
-    w[l] = w[l] || []; w[l].push({
-      'gtm.start':
-        new Date().getTime(), event: 'gtm.js'
-    }); var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-  })(window, document, 'script', 'dataLayer', 'GTM-MFCT45H');</script> -->
-<!-- End Google Tag Manager -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179758052-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-179758052-1');
+  </script>
+
+  <script>
+    function updateSingleVideo() {
+      var demo = document.getElementById("single-menu-demos").value;
+      var task = document.getElementById("single-menu-tasks").value;
+      var inst = document.getElementById("single-menu-instances").value;
+
+      console.log("single", demo, task, inst)
+
+      var video = document.getElementById("multi-task-result-video");
+      video.src = "media/results/sim_rollouts/" +
+                  "n" +
+                  demo +
+                  "-" +
+                  task +
+                  "-" +
+                  inst +
+                  ".mp4"
+      video.playbackRate = 1.75;
+      video.play();
+    }
+
+    function updateQpredVideo() {
+      var task = document.getElementById("single-menu-qpred").value;
+
+      console.log("qpred", task)
+
+      var video = document.getElementById("q-pred-video");
+      video.src = "media/results/qpred/" +
+                  task +
+                  ".mp4"
+      video.playbackRate = 1.75;
+      video.play();
+    }
+
+  </script>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -37,7 +71,7 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
-<body>
+<body onload="updateSingleVideo(); updateQpredVideo();">
   <!-- Google Tag Manager (noscript) -->
   <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MFCT45H" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript> -->
@@ -183,10 +217,17 @@
               Then, we discuss training and inference for student models to predict the rationale and the answer
             </p>
           </div>
-          <video poster="" id="rational_creation" autoplay muted loop playsinline height="100%">
-            <source src="./static/videos/videos/rational_creation.mov"
-                    type="video/mp4">
-          </video>
+      </div>
+    </div>
+  </div>
+
+  <div class="columns is-centered has-text-centered">
+    <!-- Method. -->
+    <div class="column is-two-thirds">
+      <div class="publication-video">
+        <video poster="" id="rational_creation" autoplay muted loop playsinline height="100%">
+          <source src="static/videos/rational_creation.mov" type="video/mp4">
+        </video>
       </div>
     </div>
   </div>
